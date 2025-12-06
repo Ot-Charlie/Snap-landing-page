@@ -1,3 +1,4 @@
+// hamburger menu toggle
 const menuIcon = document.getElementById('menu-toggle-icon'); // Target the single image
 const navMenu = document.querySelector('.header-links');
 const overlay = document.querySelector('.overlay'); 

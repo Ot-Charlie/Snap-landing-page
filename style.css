@@ -149,4 +149,57 @@ font-weight: 500;
     .icon-menu{
   display: none;
 }
+header{
+    align-items: center;
+    margin-top: 20px;
+}
+.header-links{
+flex-direction:row;
+    background-color: transparent;
+    position: relative;
+ padding-top: 0;
+ right: 20%;
+ font-size: 1rem;
+ align-items: center;
+ gap: 50px;
+ }
+ .features, .company{
+    min-width:max-content;
+    position: relative;
+ }
+  .link-dropdown{
+position: absolute;
+ padding: 20px;
+background-color: var(--grey-50);
+border-radius: 10px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ }
+ .features-container .link-dropdown{
+   left: -55px;
+ }
+.company-container .link-dropdown{
+   left: 140px;
+ }
+
+ .login-register {
+    flex-direction: row;
+   align-items: center;
+ margin-left: 30%;
+ gap:20px;
+ }
+ .register{
+    padding: 15px;
+ }
+ main{
+    display: flex;
+    gap:100px;
+    margin: 0 80px;
+ }
+ .section-two{
+    order: 1; /*this is to make the section-two appear first chronologically*/
+}
+ .section-one{
+    order: 2;
+ }
 }
