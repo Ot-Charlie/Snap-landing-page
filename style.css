@@ -146,12 +146,14 @@ font-weight: 500;
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
 @media(min-width:1020px){
-    .icon-menu{
+    .icon-menu, .overlay{
   display: none;
 }
 header{
     align-items: center;
     margin-top: 20px;
+    justify-content: unset;
+    gap: 200px;
 }
 .header-links{
 flex-direction:row;
@@ -185,7 +187,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
  .login-register {
     flex-direction: row;
    align-items: center;
- margin-left: 30%;
+ margin-left: 90%;
  gap:20px;
  }
  .register{
@@ -193,13 +195,39 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
  }
  main{
     display: flex;
-    gap:100px;
+    gap:50px;
     margin: 0 80px;
  }
  .section-two{
     order: 1; /*this is to make the section-two appear first chronologically*/
+    margin-top: 120px;
+    min-width: 50%;
+    margin-left: 70px;
+}
+h1{
+    max-width: 480px;
+    font-size: 4.5rem;
+    text-align: left;
+    margin-left: 0;
+}
+.section-two p{
+    max-width: 430px;
+    font-size: 1rem;
+    text-align: left;
+    margin: 15px 0 30px 0;
+}
+.learn-more{
+    text-align: left;
+}
+.section-two a {
+    padding: 15px 30px;
+    font-size: 1rem;
 }
  .section-one{
     order: 2;
+ }
+ .hero-img img{
+    width: auto;
+    height: 500px;
  }
 }

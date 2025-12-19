@@ -45,28 +45,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // The clickable area is the parent <p> element
     const parentToggle = toggleElement.parentElement; 
     
-    // The dropdown content is the next sibling of the parent <div> which contains the <p>
-    // To reliably find the dropdown: find the container <div> of the <p>, then find its sibling <div>
     const dropdownContainer = parentToggle.closest('div'); 
     const dropdown = dropdownContainer.querySelector('.link-dropdown');
     
     // Set initial ARIA state for accessibility (assuming collapsed by default)
     parentToggle.setAttribute('aria-expanded', 'false');
     
-    // Set initial display state for CSS control (optional, but good for default state)
     dropdown.classList.add('collapsed');
 
     parentToggle.addEventListener('click', (event) => {
       // Prevent default action if the <p> were wrapped in an <a> tag
       event.preventDefault(); 
       
-      // 1. Toggle the dropdown visibility class
+      // Toggle the dropdown visibility class
       dropdown.classList.toggle('collapsed');
 
-      // 2. Determine the new state
+      // Determine the new state
       const isExpanded = !dropdown.classList.contains('collapsed');
       
-      // 3. Swap the image source and update ARIA attribute
+      // Swap the image source and update ARIA attribute
       if (isExpanded) {
         // Menu is OPEN -> Switch to UP icon
         toggleElement.src = UP_ARROW_SRC;
